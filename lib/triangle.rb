@@ -23,7 +23,7 @@ class Triangle
   end
 
   def valid?
-    if
+    # if
     if (@a <= 0 || @b <= 0 || @c <= 0)
       raise TriangleError
     end
