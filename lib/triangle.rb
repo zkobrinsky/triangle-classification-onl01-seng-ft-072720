@@ -2,20 +2,20 @@ require "pry"
 
 class Triangle
 
-  attr_accessor :side1, :side2, :side3
+  attr_accessor :a, :b, :c
 
-  def initialize(side1, side2, side3)
-    @side1 = side1
-    @side2 = side2
-    @side3 = side3
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
 
   def kind
     valid?
 
-    if (@side1 == @side2 && @side2 == @side3)
+    if (@a == @b && @b == @c)
       :equilateral
-    elsif (@side1 == @side2 || @side2 == @side3 || @side3 == @side1)
+    elsif (@a == @b || @b == @c || @c == @a)
       :isosceles
     else
       :scalene
@@ -24,7 +24,7 @@ class Triangle
 
   # def valid?
   #   if
-  #   if (@side1 <= 0 || @side2 <= 0 || @side3 <= 0)
+  #   if (@a <= 0 || @b <= 0 || @c <= 0)
   #     raise TriangleError
   #   end
   # end
