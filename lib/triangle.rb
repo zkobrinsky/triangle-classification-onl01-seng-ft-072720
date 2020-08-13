@@ -28,6 +28,8 @@ class Triangle
       raise TriangleError
     elsif(@a + @b <= @c || @b + @c <= @a || @a + @c <= @b)
       raise TriangleError
+    else
+      true
     end
   end
 
