@@ -12,7 +12,6 @@ class Triangle
 
   def kind
     valid?
-
     if (@a == @b && @b == @c)
       :equilateral
     elsif (@a == @b || @b == @c || @c == @a)
